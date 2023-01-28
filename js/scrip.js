@@ -1,20 +1,26 @@
+const btns = document.querySelectorAll('.btn');
+const seccion = document.querySelectorAll('.contenedor .secciones');
 
-/*let home = document.getElementById("#home");
-let p1 = document.querySelector("#f1");
-let p2 = document.querySelector("#f2");
-let p3 = document.querySelector("#f3");
-let p4 = document.querySelector("#f4");
+const observer = new IntersectionObserver((entradas, observador) => {
+        entradas.forEach(entradas => {
+                if(entradas.isIntersecting){
+                        const id = '#' + entradas.target.id;
+                        history.pushState({},entradas.target.innetText, id);
 
-function color(){   
-        home.classList.toggle('colorh');
-        window.location.assign(document.querySelector("#cubo4"));
- }
-
-home.addEventListener('click', color);
-
-*/
-
-
+                        btns.forEach(btns => {
+                                btns.classList.remove('activo');
+                                const href = btns.attributes.href.nodeValue;
+                                if(href === id ) btns.classList.add('activo');
+                                
+                        });
+                }
+        });
+}, {
+        threshold: 1,
+        rootMargin: '0px'
+});
+seccion.forEach(seccion => {observer.observe(seccion)});
+        
 
 
 
