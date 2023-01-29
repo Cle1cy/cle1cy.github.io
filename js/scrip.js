@@ -8,9 +8,9 @@ let bnt4 = document.getElementById('btn4');
 let bnt5 = document.getElementById('btn5');
 let casa = document.getElementById('casa');
 
-casa.addEventListener('click', () => {location.href = '#seccion_1'})
+casa.addEventListener('click', () => {location.href = '#seccion_1'});
 bnt1.addEventListener('click',CambioSeccion);
-bnt2.addEventListener('click',CambioSeccion); 
+bnt2.addEventListener('click',CambioSeccion);
 bnt3.addEventListener('click',CambioSeccion);
 bnt4.addEventListener('click',CambioSeccion);
 bnt5.addEventListener('click',CambioSeccion);
@@ -22,10 +22,9 @@ function CambioSeccion(event)
         {
                 let link1 = event.target.attributes.id.nodeValue;
                 let link2 = btns.attributes.id.nodeValue;
-                if(link1 === link2) seccion.forEach(seccion => {location.href = btns.attributes.href.nodeValue; });    
+                if(link1 === link2) location.href = btns.attributes.href.nodeValue;   
         });
 }
-
 
 const observer = new IntersectionObserver((entradas, observador) => 
 {
