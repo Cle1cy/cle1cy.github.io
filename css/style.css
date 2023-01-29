@@ -18,8 +18,8 @@
 .contenedor .secciones{
     display:flex;
     position:relative;
-    width: 60vw;
-    height: 60vh;
+    width: 65vw;
+    height: 75vh;
     left: 20vw;
     background-color: #ffffff;
     border-radius: 5px;
