@@ -15,7 +15,7 @@
 
  /*secicons------>*/
  
-.contenedor div{
+.contenedor .secciones{
     display:flex;
     position:relative;
     width: 60vw;
@@ -49,11 +49,16 @@
     width: 48%;
     height: 90%;
     left: 47%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: justify;
     font-size: 1.4rem;
     color: rgba(000, 000, 000, .7);
+}
+
+.text h1{
+    margin-bottom: 10%;
 }
 /*header-------------------->*/
 
@@ -109,7 +114,7 @@ a:hover{
     nav{
         margin-bottom: 2%;
     }
-    .contenedor div{
+    .contenedor .secciones{
         height: 20vh;
     }
     .text{
