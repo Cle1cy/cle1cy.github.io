@@ -28,6 +28,12 @@
     
 }
 
+.espacio{
+    position: relative;
+    height: 10vh;
+    width: 100%;
+}
+
 .contenedor{
     position: relative;
     top:10vh ;
