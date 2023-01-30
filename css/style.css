@@ -19,7 +19,7 @@
     display:flex;
     position:relative;
     width: 65vw;
-    height: 75vh;
+    min-height: 75vh;
     left: 20vw;
     background-color: #ffffff;
     border-radius: 5px;
@@ -88,9 +88,7 @@ header a{
     margin-left: 1.2em;
     margin-right: 1.2em;   
     text-decoration: none;
-    color: #000000;
-   
-    
+    color: #000000; 
 }
 
 .colorh{
@@ -122,11 +120,26 @@ a:hover{
         margin-bottom: 2%;
     }
     .contenedor .secciones{
-        height: 20vh;
+        display: flex;  
+        margin-bottom: 5vh;
+        height: 80vh;
     }
     .text{
-        font-size: .9vh;
+        font-size: 1.6vh;
+        width: 90%;
+        height: auto;
+        left: 5%;
+        top: 60%;
+        justify-content:flex-start;
+        text-align: start;
     }
+    .imagen{
+        border-radius: 5px;
+        width: 90%;
+        height: 50%;
+    }
+
+    
     
 }
 
