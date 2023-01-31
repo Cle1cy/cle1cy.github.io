@@ -9,6 +9,7 @@
     margin: 0;
     font-family: 'Quicksand', sans-serif;
     scroll-behavior: smooth;
+    scroll-margin-top: 10vh;
 }
  body{background-color: #EEEEEE;}
 
